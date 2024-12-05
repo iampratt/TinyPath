@@ -14,7 +14,7 @@ const urlSchema = new mongoose.Schema(
     visits: [
       {
         time: {
-          type: Number,
+          type: String,
         },
         ip: {
           type: String,

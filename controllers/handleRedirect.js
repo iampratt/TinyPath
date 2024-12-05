@@ -6,7 +6,7 @@ const handleRedirect = async (req, res) => {
   try {
     const result = await modelURL.findOneAndUpdate(
       { shortID },
-      { $push: { visits: { time: Date.now(), ip: req.ip } } }
+      { $push: { visits: { time: Date(Date.now()), ip: req.ip } } }
     );
     res.redirect(result.redirectURL);
   } catch {
