@@ -10,10 +10,11 @@ A simple and efficient URL shortener service built with **Node.js**, **Express.j
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
-  - [POST /api/shorten](#1-post-apishorten)
-  - [GET /:code](#2-get-code)
+  - [POST /api](#1-post-api)
+  - [GET /:shortID](#2-get-shortid)
+  - [GET /api/analytics/:shortID](#3-get-apianalyticsshortid)
+  - [GET /api/getAll](#4-get-apigetall)
 - [Project Structure](#project-structure)
-- [License](#license)
 - [Contributing](#contributing)
 - [Contact](#contact)
 
@@ -89,7 +90,7 @@ Ensure you have the following installed:
   }
   ```
 
-### 2. **GET** `/:code`
+### 2. **GET** `/:shortID`
 
 - **Description**: Redirect to the original long URL.
 - **Response**: HTTP 200 redirect to the long URL if the code is valid.
