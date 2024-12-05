@@ -10,7 +10,7 @@ const handleNewURL = async (req, res) => {
     }
     const shortID = nanoid(7);
     const newURL = await modelURL.create({ shortID, redirectURL, visits: [] });
-    return res.json(newURL);
+    return res.json({ shortID });
   } catch (err) {
     res.status(400).json({ err: 'Invalid URL!' });
   }
