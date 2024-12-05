@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
 const cors = require('cors');
-const { handleRedirect } = require('./controllers/url');
+const handleRedirect = require('./controllers/handleRedirect');
 
 const urlRoute = require('./routes/url');
 
