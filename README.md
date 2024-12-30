@@ -1,4 +1,4 @@
-# URL Shortener
+# TinyPath
 
 A simple and efficient URL shortener service built with **Node.js**, **Express.js**, and **MongoDB** that converts long URLs into short, easy-to-share links.
 
